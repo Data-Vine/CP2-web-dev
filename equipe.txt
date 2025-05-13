@@ -1,0 +1,8 @@
+João Paulo - RM: 565383
+Alexandre Wesley - RM: 561622
+Kauê Almeida - RM: 564211
+Gabriel Ferreira - RM: 562330
+João Pedro - RM: 565813
+
+link do repositorio:
+https://github.com/Data-Vine/CP2-web-dev.git

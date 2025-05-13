@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Container de perguntas e respostas */
+#container-perguntas, #container-resultado {
+    transition: all 0.3s ease;
+}
+
+#pergunta {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#resposta {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Estilos do resultado */
+.carro-recomendado {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carro-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.carro-info {
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    #pergunta {
+        font-size: 1.1rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}

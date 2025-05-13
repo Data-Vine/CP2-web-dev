@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="Logo">Loja de Carros</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./carros.html">Carros</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Quiz</h2>
+    <main id="container-quiz">
+        <div id="container-perguntas">
+            <h1>Descubra seu carro ideal</h1>
+            <p id="pergunta"></p>
+            <input type="text" id="resposta" placeholder="Digite sua resposta...">
+            <p id="message"></p>
+            <button id="proximo">Próxima Pergunta</button>
+        </div>
+        
+        <div id="container-resultado" class="hidden">
+            <h2>Seu Resultado</h2>
+            <ul id="lista-resultado"></ul>
+            
+            <div class="carro-recomendado">
+                <h3>Seu carro ideal é:</h3>
+                <img id="carro-img" src="" alt="Carro recomendado" class="carro-img">
+                <h2 id="carro-nome"></h2>
+                <div id="carro-descricao" class="carro-info"></div>
+                <div id="carro-especificacoes" class="carro-info"></div>
+            </div>
+            
+            <button id="inicio-btn">Reiniciar Questionário</button>
+        </div>
+    </main>
+
+
+
+
+    <script src="../src/JS/quiz.js"></script>
+</body>
+</html>
