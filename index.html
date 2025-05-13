@@ -7,9 +7,55 @@
     <title>CP2 Web-dev</title>
 </head>
 <body>
+
+    <header>
+        <h1 id="Logo">Loja de Carros</h1>
+        <h2>Home</h2>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/carros.html">Carros</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="./src/assets/images/citroen-c3.webp" alt="citroen-c3">
+            </div>
+            <div class="slide fade">
+                <img src="./src/assets/images/camry.webp" alt="Toyota camry">
+            </div>
+            <div class="slide fade">
+                <img src="./src/assets/images/GTR.webp" alt="Nissan GTR">
+            </div>
+            <div class="slide fade">
+                <img src="./src/assets/images/DB12.webp" alt="Aston Martin DB12">
+            </div>
+
+            <!-- Controles de navegação -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
     
+    <!-- Indicadores -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
 
+    </section>
+
+    <section>
+        <footer>
+            <h5>&copy;2025 Todos os direitos reservados</h5>
+        </footer>
+    </section>
 
     <script src="./src/JS/script.js"></script>
 </body>
