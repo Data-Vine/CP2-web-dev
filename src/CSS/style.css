@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #DAE1D7;
+}
+header{
+    background: #c8cacf;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px #555;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul a{
+    display: inline;
+    text-decoration: none;
+    color: rgb(104, 62, 218);
+    font-weight: 1000;
+}
+header nav ul a:hover{
+    color: #000;
+    font-weight: 1000;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.banner #image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
