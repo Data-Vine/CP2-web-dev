@@ -1,3 +1,5 @@
+alert("BEM VINDO AO QUIZ")
+
 document.addEventListener('DOMContentLoaded', () => {
     // Elementos do DOM
     const elements = {
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             descricao: "O Toyota Camry é ideal para quem busca conforto, qualidade e tecnologia em um sedã premium.",
             especificacoes: "Motor 2.5 Hybrid | Consumo: 18km/l | Porta-malas: 524L | Preço médio: R$ 280.000",
             match: [
-                "300000", "conforto", "viagens", "família", "sedã",
+                "300000", "conforto", "viagens", "sedã",
                 "tecnologia", "automático", "todo dia", "moderno", "segurança", "muito importante","3","4","5"
             ]
         },
