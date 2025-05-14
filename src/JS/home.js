@@ -1,8 +1,8 @@
 let imagens =[
-    'src/assets/imagem1.jpg',
-    'src/assets/imagem2.jpg',
-    'src/assets/imagem3.jpg',
-    'src/assets/imagem4.jpg',
+    'src/assets/images/c3.webp',
+    'src/assets/images/camry.webp',
+    'src/assets/images/GTR.webp',
+    'src/assets/images/DB12.webp',
 ]
 let i=0;
 let tempo = 2000;
