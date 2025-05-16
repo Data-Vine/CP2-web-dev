@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #DAE1D7;
+}
+header{
+    background: #c8cacf;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul a{
+    display: inline;
+    text-decoration: none;
+    color: rgb(104, 62, 218);
+    font-weight: 1000;
+}
+header nav ul a:hover{
+    color: #000;
+    font-weight: 1000;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.banner #image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#title{
+    text-align: center;
+    font-size: 2em;
+}
+#carros-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px
+}
+.carros{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.carros img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.carros h3{
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.carros a{
+    display: inline-block;/*Permiti definir padding e margin*/
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.carros a:hover{
+    color: #555;
+}
