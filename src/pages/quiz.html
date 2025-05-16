@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
     <title>Quiz</title>
+    <link rel="stylesheet" href="../CSS/quiz.css">
 </head>
 <body>
     <header>
-        <h1 id="Logo">Quiz de Carros</h1>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./carros.html">Carros</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-            </ul>
-        </nav>
+      <h1 id="Logo">Quiz de Carros</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./carros.html">Carros</a></li>
+          <li><a href="./quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
     </header>
+    
     <main id="container-quiz">
-        <div id="container-perguntas">
-            <h1>Descubra seu carro ideal</h1>
-            <p id="pergunta"></p>
-            <input type="text" id="resposta" placeholder="Digite sua resposta...">
-            <p id="message"></p>
-            <button id="proximo">Próxima Pergunta</button>
-        </div>
+      <div id="container-perguntas">
+        <h1>Descubra seu carro ideal</h1>
+        <p id="pergunta"></p>
+        <div id="opcoes-container"></div>
+        <p id="message"></p>
+      </div>
+    
+      <div id="container-resultado" class="hidden">
+        <h2>Seu Resultado</h2>
+        <ul id="lista-resultado"></ul>
         
-        <div id="container-resultado" class="hidden">
-            <h2>Seu Resultado</h2>
-            <ul id="lista-resultado"></ul>
-            
-            <div class="carro-recomendado">
-                <h3>Seu carro ideal é:</h3>
-                <img id="carro-img" src="" alt="Carro recomendado" class="carro-img">
-                <h2 id="carro-nome"></h2>
-                <div id="carro-descricao" class="carro-info"></div>
-                <div id="carro-especificacoes" class="carro-info"></div>
-            </div>
-            
-            <button id="inicio-btn">Reiniciar Questionário</button>
+        <div class="carro-recomendado">
+          <h3>Seu carro ideal é:</h3>
+          <img id="carro-img" src="" alt="Carro recomendado" class="carro-img" />
+          <h2 id="carro-nome"></h2>
+          <div id="carro-descricao" class="carro-info"></div>
+          <div id="carro-especificacoes" class="carro-info"></div>
         </div>
+    
+        <button id="inicio-btn">Reiniciar Questionário</button>
+      </div>
     </main>
 
-
-
-
+    
     <script src="../JS/quiz.js"></script>
+    </body>
+    
 </body>
 </html>

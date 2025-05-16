@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #DAE1D7;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: #c8cacf;
+    color: #222;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1#Logo {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li a {
+    color: rgb(104, 62, 218);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #333;
+    outline: none;
+  }
+  main#container-quiz {
+    flex: 1;
+    max-width: 700px;
+    margin: 2rem auto 4rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+    padding: 2rem;
+  }
+  #container-perguntas h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+  }
+  #pergunta {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #222;
+  }
+  #opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  button.opcao-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #555;
+    transition: background-color 0.2s ease;
+    text-align: left;
+  }
+  button.opcao-btn:hover,
+  button.opcao-btn:focus {
+    background: #ddd;
+    outline: none;
+  }
+  #message {
+    color: #d33;
+    margin-top: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  .hidden {
+    display: none !important;
+  }
+  #container-resultado h2 {
+    text-align: center;
+    color: #004a99;
+    margin-bottom: 1.5rem;
+  }
+  #lista-resultado {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+  }
+  #lista-resultado li {
+    margin-bottom: 1rem;
+    background: #f0f5ff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+  #lista-resultado li strong {
+    color: #0078ff;
+  }
+  .carro-recomendado {
+    text-align: center;
+  }
+  .carro-recomendado h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  #carro-nome {
+    font-size: 2rem;
+    margin: 0.25rem 0 1rem 0;
+    color: #004a99;
+    font-weight: 700;
+  }
+  .carro-img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+    margin-bottom: 1rem;
+  }
+  .carro-info {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.3;
+  }
+  #inicio-btn {
+    background: #004a99;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto 0 auto;
+    box-shadow: 0 6px 16px rgb(0 74 153 / 0.5);
+    transition: background-color 0.3s ease;
+  }
+  #inicio-btn:hover,
+  #inicio-btn:focus {
+    background: #003366;
+    outline: none;
+  }
+  @media (max-width: 480px) {
+    main#container-quiz {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    #carro-nome {
+      font-size: 1.5rem;
+    }
+    #pergunta {
+      font-size: 1.2rem;
+    }
+    button.opcao-btn {
+      font-size: 0.95rem;
+      padding: 0.6rem 1rem;
+    }
+  }
