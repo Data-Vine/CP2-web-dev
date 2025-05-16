@@ -86,3 +86,54 @@ nav ul li a:focus {
 .carros a:hover{
     color: #ddd;
 }
+.container-sobre {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+.container-sobre h2,
+.container-sobre h3 {
+  margin-bottom: 1rem;
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.sobre-info p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.valores {
+  margin-top: 2rem;
+}
+
+.valores ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.valores li {
+  background-color: #e4e7eb;
+  color: #222;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.valores li:hover {
+  transform: scale(1.05);
+  background-color: #d6d8dd;
+}
