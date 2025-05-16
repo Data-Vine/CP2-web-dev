@@ -5,6 +5,13 @@
 }
 body{
     background: #DAE1D7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background: #c8cacf;
@@ -22,13 +29,15 @@ header nav ul a{
     display: inline;
     text-decoration: none;
     color: rgb(104, 62, 218);
-    font-weight: 1000;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
-header nav ul a:hover{
-    color: #000;
-    font-weight: 1000;
-    text-decoration: underline;
-    text-transform: uppercase;
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #b1b1b1;
+  outline: none;
 }
 .banner #image{
     width: 100%;

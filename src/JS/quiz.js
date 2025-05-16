@@ -130,45 +130,54 @@ alert("BEM VINDO AO QUIZ");
     }
 
     function analisarRespostas() {
-      // Juntar todas as respostas e converter para caixa baixa
-      const termos = respostas.join(' ').toLowerCase();
-      let scores = {};
-
-      Object.keys(carros).forEach(carro => {
-        scores[carro] = 0;
-        const carroLowerMatch = carros[carro].match.map(m => m.toLowerCase());
-
-        // Verificação do preço para filtrar carros fora do orçamento
-        const precoResposta = respostas[0].toLowerCase();
-
-        // Condições para filtrar carros fora do orçamento
-        if ((precoResposta === "até r$ 100.000" && !carroLowerMatch.includes("até r$ 100.000")) ||
-            (precoResposta === "r$ 300.000" && carroLowerMatch.includes("luxo") && carro !== "Toyota Camry") ||
-            (precoResposta === "r$ 300.000" && carroLowerMatch.includes("acima de r$ 150.000") && carro !== "Toyota Camry")) {
-          // Pular carro fora do orçamento
-          scores[carro] = -1; // Para não escolher
-          return;
-        }
-
-        // Somar pontos para termos coincididos nas respostas
-        carroLowerMatch.forEach(termo => {
-          if (termos.includes(termo)) {
-            scores[carro]++;
+        // Juntar todas as respostas e converter para caixa baixa
+        const termos = respostas.join(' ').toLowerCase();
+        let scores = {};
+      
+        const pessoasResposta = respostas[3]; // resposta da 4ª pergunta (quantas pessoas)
+      
+        Object.keys(carros).forEach(carro => {
+          scores[carro] = 0;
+          const carroLowerMatch = carros[carro].match.map(m => m.toLowerCase());
+      
+          // Filtrar carros com base no critério de número de pessoas
+          if ((pessoasResposta === "3-4" || pessoasResposta === "5+") && 
+              (carroLowerMatch.includes("1") && carroLowerMatch.includes("2")) && 
+              !carroLowerMatch.some(s => ["3","4","5"].includes(s))) {
+            // Este carro só suporta 1 ou 2 pessoas, mas o usuário escolheu transportar >= 3
+            scores[carro] = -1; // excluir este carro
+            return;
           }
+      
+          // Verificação do preço para filtrar carros fora do orçamento
+          const precoResposta = respostas[0].toLowerCase();
+      
+          if ((precoResposta === "até r$ 100.000" && !carroLowerMatch.includes("até r$ 100.000")) ||
+              (precoResposta === "r$ 300.000" && carroLowerMatch.includes("luxo") && carro !== "Toyota Camry") ||
+              (precoResposta === "r$ 300.000" && carroLowerMatch.includes("acima de r$ 150.000") && carro !== "Toyota Camry")) {
+            scores[carro] = -1;
+            return;
+          }
+      
+          // Somar pontos para termos coincididos nas respostas
+          carroLowerMatch.forEach(termo => {
+            if (termos.includes(termo)) {
+              scores[carro]++;
+            }
+          });
         });
-      });
-
-      // Selecionar o carro com maior pontuação (excluindo -1)
-      let melhorCarro = null;
-      let maiorScore = -Infinity;
-      for (const [carro, score] of Object.entries(scores)) {
-        if (score > maiorScore) {
-          maiorScore = score;
-          melhorCarro = carro;
+      
+        // Selecionar o carro com maior pontuação (excluindo -1)
+        let melhorCarro = null;
+        let maiorScore = -Infinity;
+        for (const [carro, score] of Object.entries(scores)) {
+          if (score > maiorScore) {
+            maiorScore = score;
+            melhorCarro = carro;
+          }
         }
-      }
-      return melhorCarro;
-    }
+        return melhorCarro;
+      }      
 
     function mostrarResultado() {
       elements.containerPerguntas.classList.add('hidden');
