@@ -20,37 +20,37 @@ alert("BEM VINDO AO QUIZ");
       "BYD Dolphin": {
         img: "../assets/images/image1.jpg",
         descricao: "O Dolphin é um hatch compacto ideal para quem busca economia e praticidade no dia a dia.",
-        especificacoes: "Motor 1.6 Flex | Consumo: 14km/l (cidade) | Porta-malas: 300L | Preço médio: R$ 80.000",
+        especificacoes: "Motor elétrico de 204 cv e 31,6 kgfm de torque. | Porta-malas: 345L | Preço médio: R$ 80.000",
         match: [
           "até r$ 100.000", "economia", "cidade", "compacto", "3", "4", "5",
-          "simplicidade", "automático", "todo dia", "moderno", "segurança", "importante"
+          "simplicidade", "todo dia", "moderno", "segurança", "importante"
         ]
       },
       "Volvo EX30": {
         img: "../assets/images/image2.jpg",
         descricao: "O Volvo EX30 é um SUV elétrico que combina estilo e eficiência, com uma autonomia de até 400 km.",
-        especificacoes: "Motor 2.5 Hybrid | Consumo: 18km/l | Porta-malas: 524L | Preço médio: R$ 280.000",
+        especificacoes: "Motor elétrico de 272 cv e 35 kgfm de torque. | Porta-malas: 400L | Preço médio: R$ 280.000",
         match: [
-          "r$ 300.000", "conforto", "viagens", "sedã",
-          "tecnologia", "automático", "todo dia", "moderno", "segurança", "muito importante", "3", "4", "5"
+          "r$ 300.000", "conforto", "viagens", "SUV",
+          "tecnologia", "todo dia", "moderno", "segurança", "muito importante", "3", "4", "5"
         ]
       },
-      "BMW IX3": {
+      "BMW IX3 M Sport": {
         img: "../assets/images/image3.jpg",
-        descricao: "O BMW IX3 é um SUV elétrico que combina desempenho e sustentabilidade, com uma autonomia de até 460 km.",
-        especificacoes: "Motor 3.0 Turbo | 286cv | 0-100km/h em 6.1s | Preço médio: R$ 400.000",
+        descricao: "O BMW IX3 M Sport é um SUV elétrico que combina desempenho e sustentabilidade, com uma autonomia de até 460 km.",
+        especificacoes: "Motor elétrico de 286 cv e 40,78 kgfm de torque. | Porta-malas: 510L | Preço médio: R$ 400.000",
         match: [
           "performance", "esportivo", "potência", "1", "2",
-          "tecnologia", "manual", "fins de semana", "esportivo", "segurança", "importante", "r$ 800.000"
+          "tecnologia", "fins de semana", "esportivo", "segurança", "importante", "r$ 800.000"
         ]
       },
       "Renault Kwid E-Tech": {
         img: "../assets/images/image4.jpg",
         descricao: "O Renault Kwid E-Tech é um carro elétrico compacto que oferece eficiência e praticidade para o dia a dia.",
-        especificacoes: "Motor 1.0 Elétrico | 68cv | 0-100km/h em 12s | Preço médio: R$ 100.000",
+        especificacoes: "Motor elétrico de 65cv e 11,52 kgfm de torque | Porta-malas:290L | Preço médio: R$ 100.000",
         match: [
-          "luxo", "exclusivo", "1", "2", "futurista",
-          "performance", "tecnologia", "manual", "fins de semana", "segurança", "muito importante", "não tenho limite"
+          "compacto", "exclusivo", "1", "2", "futurista",
+          "performance", "tecnologia", "fins de semana", "segurança", "muito importante", "não tenho limite"
         ]
       }
     };
@@ -74,7 +74,7 @@ alert("BEM VINDO AO QUIZ");
       },
       {
         pergunta: "Qual tipo de carro prefere?",
-        opcoes: ["compacto", "sedã", "SUV", "esportivo", "luxo"]
+        opcoes: ["compacto", "SUV", "esportivo"]
       },
       {
         pergunta: "Você valoriza mais tecnologia ou simplicidade no interior do carro?",
@@ -83,10 +83,6 @@ alert("BEM VINDO AO QUIZ");
       {
         pergunta: "Qual a sua prioridade em relação à segurança?",
         opcoes: ["muito importante", "importante", "não me preocupo muito"]
-      },
-      {
-        pergunta: "Você prefere câmbio automático ou manual?",
-        opcoes: ["automático", "manual", "tanto faz"]
       },
       {
         pergunta: "Com que frequência pretende usar o carro?",
