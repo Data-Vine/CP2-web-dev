@@ -20,7 +20,7 @@ alert("BEM VINDO AO QUIZ");
       "BYD Dolphin": {
         img: "../assets/images/image1.jpg",
         descricao: "O Dolphin é um hatch compacto ideal para quem busca economia e praticidade no dia a dia.",
-        especificacoes: "Motor elétrico de 204 cv e 31,6 kgfm de torque. | Porta-malas: 345L | Preço médio: R$ 80.000",
+        especificacoes: "Motor elétrico de 95 cv e 18,4 kgfm de torque. | Porta-malas: 345L | Preço médio: R$ 80.000",
         match: [
           "até r$ 100.000", "economia", "cidade", "compacto", "3", "4", "5",
           "simplicidade", "todo dia", "moderno", "segurança", "importante"
