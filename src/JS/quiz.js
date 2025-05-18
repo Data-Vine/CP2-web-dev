@@ -17,37 +17,37 @@ alert("BEM VINDO AO QUIZ");
     };
 
     const carros = {
-      "Citroën C3": {
-        img: "../assets/images/c3.webp",
-        descricao: "O Citroën C3 é perfeito para quem busca economia, praticidade e conforto no dia a dia urbano.",
+      "BYD Dolphin": {
+        img: "../assets/images/image1.jpg",
+        descricao: "O Dolphin é um hatch compacto ideal para quem busca economia e praticidade no dia a dia.",
         especificacoes: "Motor 1.6 Flex | Consumo: 14km/l (cidade) | Porta-malas: 300L | Preço médio: R$ 80.000",
         match: [
           "até r$ 100.000", "economia", "cidade", "compacto", "3", "4", "5",
           "simplicidade", "automático", "todo dia", "moderno", "segurança", "importante"
         ]
       },
-      "Toyota Camry": {
-        img: "../assets/images/camry.webp",
-        descricao: "O Toyota Camry é ideal para quem busca conforto, qualidade e tecnologia em um sedã premium.",
+      "Volvo EX30": {
+        img: "../assets/images/image2.jpg",
+        descricao: "O Volvo EX30 é um SUV elétrico que combina estilo e eficiência, com uma autonomia de até 400 km.",
         especificacoes: "Motor 2.5 Hybrid | Consumo: 18km/l | Porta-malas: 524L | Preço médio: R$ 280.000",
         match: [
           "r$ 300.000", "conforto", "viagens", "sedã",
           "tecnologia", "automático", "todo dia", "moderno", "segurança", "muito importante", "3", "4", "5"
         ]
       },
-      "Nissan GT-R": {
-        img: "../assets/images/GTR.webp",
-        descricao: "O Nissan GT-R é para os apaixonados por performance e tecnologia automotiva de alto nível.",
-        especificacoes: "Motor 3.8 V6 Bi-Turbo | 565cv | 0-100km/h em 2.7s | Preço médio: R$ 750.000",
+      "BMW IX3": {
+        img: "../assets/images/image3.jpg",
+        descricao: "O BMW IX3 é um SUV elétrico que combina desempenho e sustentabilidade, com uma autonomia de até 460 km.",
+        especificacoes: "Motor 3.0 Turbo | 286cv | 0-100km/h em 6.1s | Preço médio: R$ 400.000",
         match: [
           "performance", "esportivo", "potência", "1", "2",
           "tecnologia", "manual", "fins de semana", "esportivo", "segurança", "importante", "r$ 800.000"
         ]
       },
-      "Aston Martin DB12": {
-        img: "../assets/images/DB12.webp",
-        descricao: "O Aston Martin DB12 é o supercarro perfeito para quem busca exclusividade e desempenho extraordinário.",
-        especificacoes: "Motor 4.0 V8 Bi-Turbo | 680cv | 0-100km/h em 3.5s | Preço médio: R$ 2.500.000",
+      "Renault Kwid E-Tech": {
+        img: "../assets/images/image4.jpg",
+        descricao: "O Renault Kwid E-Tech é um carro elétrico compacto que oferece eficiência e praticidade para o dia a dia.",
+        especificacoes: "Motor 1.0 Elétrico | 68cv | 0-100km/h em 12s | Preço médio: R$ 100.000",
         match: [
           "luxo", "exclusivo", "1", "2", "futurista",
           "performance", "tecnologia", "manual", "fins de semana", "segurança", "muito importante", "não tenho limite"
@@ -58,7 +58,7 @@ alert("BEM VINDO AO QUIZ");
     const questoes = [
       {
         pergunta: "Qual o máximo que estaria disposto a pagar?",
-        opcoes: ["até R$ 100.000", "R$ 300.000", "R$ 800.000", "não tenho limite"]
+        opcoes: ["até R$ 100.000", "R$ 400.000", "R$ 800.000", "não tenho limite"]
       },
       {
         pergunta: "Você prioriza economia ou performance?",
